@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do.It - Dashboard</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="/js/bootstrap.js"></script>
+</head>
+<body class="bg-dark">
+   <main>
+        <!--    navbar   -->
+        <nav class="navbar sticky-top navbar-expand-lg bg-dark text-info">
+            <div class="container-fluid">
+                <button class="btn btn-outline-info" id="main-nav-button"><a class="navbar-brand text-info" href="index.html">Home</a></button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-theme="dark"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="task_dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="register.html">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="authentication.html">Log In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- task container -->
+        <div class="bg-dark-subtle rounded p-3 m-3">
+            <div class="p-2 border-warning flex-fill bg-dark bg-gradient row rounded">
+                <h1 class="text-center text-info">Task List</h1>
+                <div class="col-lg card p-2 m-3 border-warning flex-fill bg-secondary bg-gradient bg-opacity-25 text-warning" style="width: 20rem;">
+                    <div class="card-body">
+                        <h4 class="card-title" id="task1-name">Task Name</h4>
+                        <div class="row">
+                            <div class="col-6-sm" id="task1-priority">
+                                <span class="badge text-bg-info bg-opacity-100">Shopping</span>
+                                <span class="badge text-bg-danger bg-opacity-100">High</span>
+                                <span class="badge text-bg-dark bg-opacity-100">Incomplete</span>
+                            </div>
+                        </div>
+                        <p class="card-text" id="task1-details">Task details </p>
+                    </div>
+                    <a class="text-info" href="task_details.html"><button class="btn btn-outline-info col-sm-12">View</button></a>
+                </div>
+
+                <div class="col-lg card p-2 m-3 border-warning flex-fill bg-secondary bg-gradient bg-opacity-25 text-warning" style="width: 20rem;">
+                    <div class="card-body">
+                        <h4 class="card-title" id="task1-name">Task Name</h4>
+                        <div class="row">
+                            <div class="col-6-sm" id="task1-priority">
+                                <span class="badge text-bg-info bg-opacity-100">Homework</span>
+                                <span class="badge text-bg-warning bg-opacity-100">Medium</span>
+                                <span class="badge text-bg-success bg-opacity-100">Complete</span>
+                            </div>
+                        </div>
+                        <p class="card-text" id="task1-details">Task details </p>
+                    </div>
+                    <a class="text-info" href="task_details.html"><button class="btn btn-outline-info col-sm-12">View</button></a>
+                </div>
+                
+                <div class="col-lg card p-2 m-3 border-warning flex-fill bg-secondary bg-gradient bg-opacity-25 text-warning" style="width: 20rem;">
+                    <div class="card-body">
+                        <h4 class="card-title" id="task1-name">Task Name</h4>
+                        <div class="row">
+                            <div class="col-6-sm" id="task1-priority">
+                                <span class="badge text-bg-info bg-opacity-100">Gardening</span>
+                                <span class="badge text-bg-primary bg-opacity-100">Low</span>
+                                <span class="badge text-bg-secondary bg-opacity-100">Partial</span>
+                            </div>
+                        </div>
+                        <p class="card-text" id="task1-details">Task details </p>
+                    </div>
+                    <a class="text-info" href="task_details.html"><button class="btn btn-outline-info col-sm-12">View</button></a>
+                </div>
+
+                <div class="col-lg card p-2 m-3 border-warning flex-fill bg-secondary bg-gradient bg-opacity-25 text-warning" style="width: 20rem;">
+                    <div class="card-body">
+                        <h4 class="card-title" id="task1-name">Task Name</h4>
+                        <div class="row">
+                            <div class="col-6-sm" id="task1-priority">
+                                <span class="badge text-bg-info bg-opacity-100">Chores</span>
+                                <span class="badge text-bg-danger bg-opacity-100">High</span>
+                                <span class="badge text-bg-success bg-opacity-100">Complete</span>
+                            </div>
+                        </div>
+                        <p class="card-text" id="task1-details">Task details </p>
+                    </div>
+                    <a class="text-info" href="task_details.html"><button class="btn btn-outline-info col-sm-12">View</button></a>
+                </div>
+                <a class="text-info mb-3" href="task_creation.html"><button class="btn btn-outline-info col-sm-12">Add Task</button></a>
+        </div>
+        </div>
+   </main>
+</body>
+</html>

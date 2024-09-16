@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do.It - Register</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="/js/bootstrap.js"></script>
+</head>
+<body class="bg-dark">
+   <main>
+        <!--    navbar   -->
+        <nav class="navbar sticky-top navbar-expand-lg bg-dark text-info">
+            <div class="container-fluid">
+                <button class="btn btn-outline-info" id="main-nav-button"><a class="navbar-brand text-info" href="index.html">Home</a></button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-theme="dark"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                                <a class="nav-link text-info" href="task_dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link text-info" href="register.html">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="authentication.html">Log In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- register -->
+        <div class="bg-dark-subtle rounded m-auto mt-5 p-2" style="max-width: 800px;">
+            <form class="bg-dark bg-gradient m-3 p-4 row rounded g-3 text-info needs-validation" novalidate>
+                <div class="col-md-4 position-relative">
+                    <label for="validationTooltip01" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="validationTooltip01" required>
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4 position-relative">
+                    <label for="validationTooltip02" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="validationTooltip02" required>
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4 position-relative">
+                    <label for="validationTooltipUsername" class="form-label">Username</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                        <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                        <div class="invalid-tooltip">
+                        Please choose a unique and valid username.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 position-relative">
+                    <label for="validationTooltip03" class="form-label">City</label>
+                    <input type="text" class="form-control" id="validationTooltip03" required>
+                    <div class="invalid-tooltip">
+                        Please provide a valid city.
+                    </div>
+                </div>
+                <div class="col-md-3 position-relative">
+                    <label for="validationTooltip04" class="form-label">State</label>
+                    <select class="form-select" id="validationTooltip04" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>NY</option>
+                        <option>MD</option>
+                        <option>CT</option>
+                        <option>PA</option>
+                    </select>
+                    <div class="invalid-tooltip">
+                        Please select a valid state.
+                    </div>
+                </div>
+                <div class="col-md-3 position-relative mb-3">
+                    <label for="validationTooltip05" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="validationTooltip05" required>
+                    <div class="invalid-tooltip">
+                        Please provide a valid zip.
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-outline-info" type="submit">Register</button>
+                </div>
+            </form>
+        </div>
+   </main>
+</body>
+</html>

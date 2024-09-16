@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do.It - Task Details</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="/js/bootstrap.js"></script>
+</head>
+<body class="bg-dark">
+   <main>
+        <!--    navbar   -->
+        <nav class="navbar sticky-top navbar-expand-lg bg-dark text-info">
+            <div class="container-fluid">
+                <button class="btn btn-outline-info" id="main-nav-button"><a class="navbar-brand text-info" href="index.html">Home</a></button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-theme="dark"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="task_dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="register.html">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="authentication.html">Log In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- task creation -->
+        <div class="bg-dark-subtle rounded m-auto p-4 mt-5" style="max-width:800px;">
+            <form class="needs-validation" novalidate>
+                <div class="row g-3 mb-3">
+                    <!-- task name -->
+                    <div class="col-md-4 input-group">
+                        <span class="input-group-text" id="task_input_prepend">Task Name</span>
+                        <input type="text" class="form-control" id="task_input" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <!-- task details -->
+                    <div class="col-md-4 input-group">
+                        <span class="input-group-text" id="task_input_prepend">Task Details</span>
+                        <textarea class="form-control" id="details_input" rows="3"></textarea>
+                    </div>
+                </div>
+                
+                <div class="row g-3 mb-3">
+                    <!-- category -->
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <span class="input-group-text" id="category_prepend">Category</span>
+                            <input type="text" class="form-control" id="category_input" required>
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <!-- priority -->
+                    <div class="col-md-3">
+                        <div class="input-group">
+                            <span class="input-group-text" id="priority_prepend">Priority</span>
+                            <select class="form-select" id="priority_input" required>
+                                <option selected disabled value="">Choose priority</option>
+                                <option value="high">High</option>
+                                <option value="medium">Medium</option>
+                                <option value="low">Low</option>
+                            </select>
+                        </div>
+                        <div class="invalid-feedback">
+                        Please choose a priority level.
+                        </div>
+                    </div>
+                    <!-- completion -->
+                    <div class="col-md-3">
+                        <div class="input-group">
+                            <span class="input-group-text" id="completion_prepend">Status</span>
+                            <select class="form-select" id="completion_input" required>
+                                <option selected value="no">No</option>
+                                <option value="yes">Yes</option>
+                                <option value="partial">Partial</option>
+                            </select>
+                        </div>
+                        <div class="invalid-feedback">
+                        Please choose completion status.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Save</button>
+                </div>
+            </form>
+        </div>
+   </main>
+</body>
+</html>
